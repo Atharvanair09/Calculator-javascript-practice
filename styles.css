@@ -110,7 +110,7 @@ button:hover{
 
 @media (max-width: 535px){
     .info{
-        margin-top:20%;
+        margin-top:-10%;
         align-items: center;
     }
     
