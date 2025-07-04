@@ -131,6 +131,10 @@ button:hover{
         margin:1.6%;
         font-size:0.75rem;
     }
+
+    .calc{
+        margin-left:-10%;
+    }
  
 }
 
