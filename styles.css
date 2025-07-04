@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Bungee+Tint&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size:25px;
+    font-family:'Bitcount Grid Double';
+}
+
+body{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#002366;
+}
+
+.container{
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem; 
+    flex-wrap: wrap; 
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 60px;
+    color:#F0EAD6;
+    padding:25px;
+    display:flex;
+    margin-left:-3%;
+}
+
+.content{
+    font-size:30px;
+    color:#F0EAD6;
+}
+
+.subscript{
+    font-size:25px; 
+    color:#F0EAD6;
+    margin-left:40%;
+}
+
+.calc{
+    border: 1px solid #717377;
+    padding: 2%;
+    border-radius:16px;
+    background-color:#F0EAD6;
+    box-shadow: 0px 3px 15px blueviolet;
+    max-width:420px;
+    width:90%;
+}
+
+input{
+    width:90%;
+    border:none;
+    padding:20px;
+    margin:10px;
+    background: transparent;
+    font-size:40px;
+    text-align:right;
+    cursor: pointer;
+}
+
+input::placeholder{
+    color:black;
+}
+
+button{
+    width:16%;
+    height:60px;
+    margin:2.5%;
+    border-radius:20%;
+    border:none;
+    background-color: black;
+    color:#F0EAD6;
+    font-size:1rem;
+    font-weight:bold;
+}
+
+button:hover{
+    cursor:hover;
+    background-color:transparent;
+    color:black;
+    border: 1px solid black;
+} 
+
+@media (max-width: 1024px){
+    .container{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .calc{
+        margin-left:3%;
+    }
+
+    .info{
+        margin-top:15%;
+    }
+}
+
+@media (max-width: 535px){
+    .info{
+        margin-top:20%;
+        align-items: center;
+    }
+    
+    .title{
+        font-size:50px;
+    }
+
+    .content{
+        font-size: 25px;
+    }
+
+    .subscript{
+        font-size: 20px;
+    }
+
+    button{
+        height:50px;
+        margin:1.6%;
+        font-size:0.75rem;
+    }
+ 
+}
+
+
+
